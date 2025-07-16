@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Conversor de Arquivos ICS/MBOX</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body>
+    <h1>Conversor de Arquivos ICS/MBOX</h1>
+
+    <div class="section">
+        <label for="origem">Tipo de Arquivo de Origem:</label>
+        <select id="origem">
+            <option value="ICS">ICS</option>
+            <option value="MBOX">MBOX</option>
+        </select>
+
+        <label for="destino">Converter para:</label>
+        <select id="destino">
+            <option value="CSV">CSV</option>
+            <option value="JSON">JSON</option>
+        </select>
+
+        <input type="file" id="arquivo" required>
+        <button onclick="enviarArquivo()">Converter</button>
+        <div id="status"></div>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+</html>
