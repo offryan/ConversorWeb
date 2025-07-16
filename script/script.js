@@ -5,7 +5,7 @@ async function enviarArquivo() {
             const status = document.getElementById("status");
 
             if (!arquivo) {
-                status.textContent = "Por favor, selecione um arquivo.";
+                status.textContent = "Selecione um arquivo.";
                 return;
             }
 
