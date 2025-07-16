@@ -17,7 +17,7 @@ async function enviarArquivo() {
             status.textContent = "Convertendo...";
 
             try {
-                const response = await fetch("https://seu-backend.onrender.com/convert", {
+                const response = await fetch("https://conversorapi.onrender.com/convert", {
                     method: "POST",
                     body: formData
                 });
