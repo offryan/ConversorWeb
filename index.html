@@ -2,33 +2,51 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Conversor de Arquivos ICS/MBOX</title>
+    <title>Galatic Conversor</title>
     <link rel="stylesheet" type="text/css" href="style/style.css">
+   <link rel="stylesheet" type="text/css" href="style/stars.css">
     <link rel="stylesheet" type="text/scss" href="style/style.scss">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<html>
+    <body>
+    <!-- Stars Background -->
+    <section class="animated-background">
+      <div id="stars1"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+    </section>
 
-    <!-- BOTÕES -->
-    <div class="section">
-        <label for="origem">Tipo de Arquivo de Origem:</label>
-        <select id="origem" class="form-select" aria-label="Tipo de arquivo de origem">
-            <option value="MBOX">MBOX</option>
-            <option value="ICS">ICS</option>
-        </select>
-
-        <label for="destino">Converter para:</label>
-        <select id="destino" class="form-select" aria-label="Tipo de arquivo de destino">
-            <option value="CSV">CSV</option>
-            <option value="JSON">JSON</option>
-        </select>
-
-               <div class="mb-3 mt-3">
-            <input class="form-control" type="file" id="arquivo" multiple>
-            <button type="button" class="btn btn-outline-success mt-2" onclick="enviarArquivo()">Converter</button>
-            <div id="status" class="mt-2"></div>
-        </div>
+    <!-- Profile -->
+    <a id="profilePicture" href="#popup">
+      <img src="/image/galatic_conversor.png" alt="Profile Picture">
+    </a>
+    <div id="userName">
+      Galatic Conversor
     </div>
 
-    <!-- SCRIPTS -->
+    <!-- Buttons -->
+        <div class="section">
+            <label for="origem">Arquivo de Origem:</label>
+            <select id="origem" class="form-select" aria-label="Tipo de arquivo de origem">
+                <option value="MBOX">MBOX</option>
+                 <option value="ICS">ICS</option>
+            </select>
+
+            <label for="destino">Converter para:</label>
+            <select id="destino" class="form-select" aria-label="Tipo de arquivo de destino">
+                <option value="CSV">CSV</option>
+                <option value="JSON">JSON</option>
+            </select>
+
+            <div class="mb-3 mt-3">
+                <input class="form-control" type="file" id="arquivo" multiple>
+                    <button type="button" class="btn btn-outline-success mt-2" onclick="enviarArquivo()">Converter</button>
+                <div id="status" class="mt-2"></div>
+            </div>
+    </div>
+
+    <!-- Scripts -->
     <script src="script/script.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
