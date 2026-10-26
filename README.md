@@ -35,4 +35,4 @@ Acesse `http://localhost:8000`. Por padrão o front usa a API publicada; para us
 
 ## 📄 Licença
 
-[MIT](LICENSE)
+© 2025-2026 Ryan G. Santos. Todos os direitos reservados. O código está público apenas para portfólio e avaliação: não é permitido copiar, modificar, distribuir ou usar comercialmente sem autorização por escrito. Veja o arquivo [LICENSE](LICENSE).
